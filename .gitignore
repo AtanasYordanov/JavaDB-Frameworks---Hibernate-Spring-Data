@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+#**/Demos/
+#*.pptx
+#*.zip
+*.7z
+
+*.rar
 # Log file
 *.log
 
