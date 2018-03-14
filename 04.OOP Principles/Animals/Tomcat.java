@@ -1,6 +1,7 @@
 package Animals;
 
 public class Tomcat extends Animal {
+
     public Tomcat(String name, int age) {
         super(name, age, "Male");
     }
