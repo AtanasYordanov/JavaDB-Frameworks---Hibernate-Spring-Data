@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="university_system@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="university_system">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="airport_management_system"/>
+    <schema id="4" parent="1" name="closed_judge_system"/>
+    <schema id="5" parent="1" name="diablo"/>
+    <schema id="6" parent="1" name="geography"/>
+    <schema id="7" parent="1" name="gringotts"/>
+    <schema id="8" parent="1" name="hospital"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="minions_db"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="orders"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="report_service"/>
+    <schema id="15" parent="1" name="sales"/>
+    <schema id="16" parent="1" name="school"/>
+    <schema id="17" parent="1" name="soft_uni"/>
+    <schema id="18" parent="1" name="sys"/>
+    <schema id="19" parent="1" name="the_nerd_herd"/>
+    <table id="20" parent="2" name="courses"/>
+    <table id="21" parent="2" name="courses_students"/>
+    <table id="22" parent="2" name="people"/>
+    <table id="23" parent="2" name="students"/>
+    <table id="24" parent="2" name="teachers"/>
+    <column id="25" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="20" name="credits">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="27" parent="20" name="endDate">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="28" parent="20" name="nameDescription">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="29" parent="20" name="startDate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="30" parent="20" name="teacher_id">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="31" parent="20" name="courses_teachers">
+      <ColNames>teacher_id</ColNames>
+    </index>
+    <key id="32" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="21" name="course_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="21" name="student_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="35" parent="21" name="FKecu9b8uo86fy0wegale3gjtrw">
+      <ColNames>student_id</ColNames>
+    </index>
+    <key id="36" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>course_id
+student_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="22" name="person_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="38" parent="22" name="firstName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="39" parent="22" name="lastName">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="40" parent="22" name="phoneNumber">
+      <Position>4</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <key id="41" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>person_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="23" name="attendance">
+      <Position>1</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="43" parent="23" name="averageGrade">
+      <Position>2</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="44" parent="23" name="person_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="45" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>person_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="24" name="email">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="47" parent="24" name="salaryPerHour">
+      <Position>2</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="48" parent="24" name="person_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="49" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>person_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
