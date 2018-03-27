@@ -126,13 +126,11 @@ public class Main {
         em.persist(bet1);
         em.persist(bet2);
 
-
         em.persist(ps1);
         em.persist(ps2);
 
         em.persist(betGame1);
         em.persist(betGame2);
-
 
         em.getTransaction().commit();
         /////////////////
