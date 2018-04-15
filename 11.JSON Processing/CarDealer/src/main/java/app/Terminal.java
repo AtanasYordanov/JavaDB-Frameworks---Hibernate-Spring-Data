@@ -85,9 +85,9 @@ public class Terminal implements CommandLineRunner {
     }
 
     private void getAllLocalSuppliers() throws IOException {
-        List<SupplierView> cars = this.supplierService.getAllLocalSuppliers();
+        List<SupplierView> suppliers = this.supplierService.getAllLocalSuppliers();
         FileWriter writer = new FileWriter("./src/main/resources/output/local-suppliers.json");
-        writer.write(this.gson.toJson(cars));
+        writer.write(this.gson.toJson(suppliers));
         writer.close();
     }
 
