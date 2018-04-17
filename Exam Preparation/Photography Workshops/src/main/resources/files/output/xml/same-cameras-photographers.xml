@@ -1,0 +1,43 @@
+
+<photographers>
+    <photographer name="Stephnie Arciniega" primary-camera="Nikon D500">
+        <lenses>
+            <lens>Nikon 28mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Jay Stanforth" primary-camera="Canon 60D">
+        <lenses>
+            <lens>Canon 600mm f1.4</lens>
+            <lens>Canon 16mm f3.5</lens>
+            <lens>Tokina 200mm f2.8</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Joane Claflin" primary-camera="Fuji XE2s">
+        <lenses>
+            <lens>Tokina 200mm f2.8</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Romona Griffin" primary-camera="Canon 550D">
+        <lenses>
+            <lens>Sigma 15mm f1.4</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Wendy Ellwood" primary-camera="Nikon D100">
+        <lenses>
+            <lens>Nikon 30mm f2.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Romona Kumm" primary-camera="Pentax K200D">
+        <lenses>
+            <lens>Pentax 200mm f2.8</lens>
+            <lens>Pentax 400mm f4.0</lens>
+            <lens>Pentax 135mm f2.8</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Beverley Kirby" primary-camera="Sony A35">
+        <lenses>
+            <lens>Tokina 200mm f2.8</lens>
+            <lens>Tamron 28mm f1.8</lens>
+        </lenses>
+    </photographer>
+</photographers>
