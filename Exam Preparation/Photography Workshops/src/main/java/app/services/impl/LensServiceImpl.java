@@ -14,7 +14,7 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class LensServiceImpl implements LensService{
+public class LensServiceImpl implements LensService {
 
     private LensRepository lensRepository;
     private MapperConverter mapper;

@@ -5,7 +5,7 @@ import com.google.gson.annotations.Expose;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-public class CameraImportDto implements Serializable{
+public class CameraImportDto implements Serializable {
     @Expose
     @NotNull
     private String type;

@@ -21,7 +21,7 @@ public class MapperConverter {
     }
 
     public BasicCamera convertCamera(CameraImportDto source) {
-        if (source == null){
+        if (source == null) {
             return null;
         }
         switch (source.getType()) {

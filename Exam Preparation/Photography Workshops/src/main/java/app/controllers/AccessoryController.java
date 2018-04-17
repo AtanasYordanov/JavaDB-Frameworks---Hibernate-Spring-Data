@@ -20,7 +20,6 @@ public class AccessoryController {
         this.accessoryService = accessoryService;
     }
 
-
     public void importAccessories() {
         AccessoryWrapperDto accessories = this.xmlSerializer.deserialize(AccessoryWrapperDto.class
                 , Paths.ACCESSORIES_INPUT_PATH);

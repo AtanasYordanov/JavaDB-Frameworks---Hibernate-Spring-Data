@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue(value = "mirrorless")
-public class MirrorlessCamera extends BasicCamera{
+public class MirrorlessCamera extends BasicCamera {
     @Column(name = "max_video_resolution")
     private String maxVideoResolution;
 

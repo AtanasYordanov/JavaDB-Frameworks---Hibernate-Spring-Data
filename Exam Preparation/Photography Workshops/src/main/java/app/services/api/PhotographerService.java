@@ -5,7 +5,6 @@ import app.model.dtos.view.LandscapePhotographerView;
 import app.model.dtos.view.PhotographerView;
 import app.model.dtos.view.PhotographerWrapperView;
 import app.model.entities.Photographer;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue(value = "DSLR")
-public class DSLRCamera extends BasicCamera{
+public class DSLRCamera extends BasicCamera {
     @Column(name = "max_shutter_speed")
     private Integer maxShutterSpeed;
 

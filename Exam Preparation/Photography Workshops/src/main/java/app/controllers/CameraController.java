@@ -23,8 +23,8 @@ public class CameraController {
     }
 
     public void importCameras() throws JAXBException {
-            CameraImportDto[] cameras = this.jsonSerializer.deserialize(CameraImportDto[].class
-                    , Paths.CAMERAS_INPUT_PATH);
-            this.cameraService.saveAll(cameras);
+        CameraImportDto[] cameras = this.jsonSerializer.deserialize(CameraImportDto[].class
+                , Paths.CAMERAS_INPUT_PATH);
+        this.cameraService.saveAll(cameras);
     }
 }

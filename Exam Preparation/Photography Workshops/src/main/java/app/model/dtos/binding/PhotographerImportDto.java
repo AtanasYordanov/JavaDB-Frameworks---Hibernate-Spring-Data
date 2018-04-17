@@ -8,7 +8,7 @@ import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.util.Set;
 
-public class PhotographerImportDto implements Serializable{
+public class PhotographerImportDto implements Serializable {
     @Expose
     @NotNull
     private String firstName;

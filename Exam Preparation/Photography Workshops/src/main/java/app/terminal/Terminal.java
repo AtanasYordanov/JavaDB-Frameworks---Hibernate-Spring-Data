@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Terminal implements CommandLineRunner{
+public class Terminal implements CommandLineRunner {
 
     private AccessoryController accessoryController;
     private CameraController cameraController;
@@ -38,6 +38,6 @@ public class Terminal implements CommandLineRunner{
         //this.photographerController.exportOrderedPhotographers();
         //this.photographerController.exportLandscapePhotographers();
         //this.photographerController.exportSameCameraPhotographers();
-        this.workshopController.exportWorkshopsByLocation();
+        //this.workshopController.exportWorkshopsByLocation();
     }
 }

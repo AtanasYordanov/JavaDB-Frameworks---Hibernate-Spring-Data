@@ -1,7 +1,5 @@
 package app.model.dtos.binding;
 
-import com.google.gson.annotations.Expose;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;

@@ -10,7 +10,7 @@ import java.util.List;
 
 @XmlRootElement(name = "workshop")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class WorkshopImportDto implements Serializable{
+public class WorkshopImportDto implements Serializable {
     @NotNull
     @XmlAttribute
     private String name;

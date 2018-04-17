@@ -27,7 +27,7 @@ import java.util.Random;
 
 @Service
 @Transactional
-public class PhotographerServiceImpl implements PhotographerService{
+public class PhotographerServiceImpl implements PhotographerService {
 
     private PhotographerRepository photographerRepository;
     private CameraRepository cameraRepository;
@@ -55,7 +55,7 @@ public class PhotographerServiceImpl implements PhotographerService{
         Random random = new Random();
         List<BasicCamera> cameras = this.cameraRepository.findAll();
         for (PhotographerImportDto photographerDto : photographerDtos) {
-            if (ValidationUtil.isValid(photographerDto)){
+            if (ValidationUtil.isValid(photographerDto)) {
                 Photographer photographer = this.mapper.convert(photographerDto, Photographer.class);
                 int randomCameraIndex = random.nextInt(cameras.size());
                 photographer.setPrimaryCamera(cameras.get(randomCameraIndex));
@@ -64,8 +64,8 @@ public class PhotographerServiceImpl implements PhotographerService{
                 for (Long lensId : photographerDto.getLenses()) {
                     Lens lens = this.lensRepository.findById(lensId).orElse(null);
                     if (lens != null && lens.getCompatibleWith() != null
-                            && (lens.getCompatibleWith().equals(photographer.getPrimaryCamera().getMake() )
-                            || lens.getCompatibleWith().equals(photographer.getSecondaryCamera().getMake()))){
+                            && (lens.getCompatibleWith().equals(photographer.getPrimaryCamera().getMake())
+                            || lens.getCompatibleWith().equals(photographer.getSecondaryCamera().getMake()))) {
                         photographer.getLenses().add(lens);
                         lens.setOwner(photographer);
                     }

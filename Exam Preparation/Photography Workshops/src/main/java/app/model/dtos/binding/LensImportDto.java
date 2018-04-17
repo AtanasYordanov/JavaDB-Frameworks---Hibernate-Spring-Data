@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 
 import java.io.Serializable;
 
-public class LensImportDto implements Serializable{
+public class LensImportDto implements Serializable {
     @Expose
     private String make;
 

@@ -18,7 +18,7 @@ import java.util.Random;
 
 @Service
 @Transactional
-public class AccessoryServiceImpl implements AccessoryService{
+public class AccessoryServiceImpl implements AccessoryService {
 
     private AccessoryRepository accessoryRepository;
     private PhotographerRepository photographerRepository;
