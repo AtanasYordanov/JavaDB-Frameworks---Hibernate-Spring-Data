@@ -17,8 +17,7 @@ public class ExcellentStudents {
             }
         }
         studentsMarks.entrySet().stream()
-                .filter(kvp -> kvp.getValue().stream()
-                        .anyMatch(m -> m == 6))
+                .filter(kvp -> kvp.getValue().stream().anyMatch(m -> m == 6))
                 .forEach(kvp -> System.out.println(kvp.getKey()));
     }
 }

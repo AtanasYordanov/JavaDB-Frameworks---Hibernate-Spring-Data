@@ -8,7 +8,7 @@ public class StudentsByEmailDomain {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Map<String, String> studentsEmails = new LinkedHashMap<>();
         String input;
-        while(!"END".equals(input = reader.readLine())){
+        while (!"END".equals(input = reader.readLine())) {
             String[] tokens = input.split(" ");
             String email = tokens[2];
             studentsEmails.put(tokens[0] + " " + tokens[1], email);

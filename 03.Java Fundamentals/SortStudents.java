@@ -9,7 +9,7 @@ public class SortStudents {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         List<String> students = new ArrayList<>();
         String input;
-        while(!"END".equals(input = reader.readLine())){
+        while (!"END".equals(input = reader.readLine())) {
             students.add(input);
         }
     }

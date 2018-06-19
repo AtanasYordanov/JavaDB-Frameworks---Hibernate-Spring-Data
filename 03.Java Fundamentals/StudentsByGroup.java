@@ -8,7 +8,7 @@ public class StudentsByGroup {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Map<Integer, List<String>> students = new LinkedHashMap<>();
         String input;
-        while(!"END".equals(input = reader.readLine())){
+        while (!"END".equals(input = reader.readLine())) {
             String[] tokens = input.split(" ");
             int group = Integer.parseInt(tokens[2]);
             students.putIfAbsent(group, new ArrayList<>());

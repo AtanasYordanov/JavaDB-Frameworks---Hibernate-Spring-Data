@@ -9,7 +9,7 @@ public class StudentsEnrolledIn2014or2015 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Map<String, List<Integer>> students = new LinkedHashMap<>();
         String input;
-        while(!"END".equals(input = reader.readLine())){
+        while (!"END".equals(input = reader.readLine())) {
             String[] tokens = input.split(" ");
             students.putIfAbsent(tokens[0], new ArrayList<>());
             for (int i = 1; i < tokens.length; i++) {

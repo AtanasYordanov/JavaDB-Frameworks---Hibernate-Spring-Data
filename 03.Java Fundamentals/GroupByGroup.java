@@ -9,7 +9,7 @@ public class GroupByGroup {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         List<Person> people = new ArrayList<>();
         String input;
-        while (!"END".equals(input = reader.readLine())){
+        while (!"END".equals(input = reader.readLine())) {
             String[] tokens = input.split(" ");
             String name = tokens[0] + " " + tokens[1];
             int group = Integer.parseInt(tokens[2]);
@@ -24,26 +24,27 @@ public class GroupByGroup {
                             .collect(Collectors.joining(", ")));
                 });
     }
-}
-class Person{
-    private String name;
-    private int group;
 
-    public Person(String name, int group) {
-        this.name = name;
-        this.group = group;
-    }
+    private static class Person {
+        private String name;
+        private int group;
 
-    public String getName() {
-        return name;
-    }
+        Person(String name, int group) {
+            this.name = name;
+            this.group = group;
+        }
 
-    public int getGroup() {
-        return group;
-    }
+        String getName() {
+            return this.name;
+        }
 
-    @Override
-    public String toString() {
-        return this.getName();
+        int getGroup() {
+            return this.group;
+        }
+
+        @Override
+        public String toString() {
+            return this.getName();
+        }
     }
 }
